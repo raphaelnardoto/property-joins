@@ -50,7 +50,7 @@ for i in df.index:
 df['lat'] = xy[:,0]
 df['lng'] = xy[:,1]
 
-##### output data to a file #####
+##### output data to a file #######
 df.to_csv(newfilename, index=False, na_rep="NA")
 print "Done! Data with lat and lng is saved as \"%s\"" % newfilename
 
